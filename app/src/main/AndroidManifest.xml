@@ -12,14 +12,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SmartBudget">
         <activity
-            android:name=".MainActivity"
+            android:name=".activity.AddTransactionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.TransactionActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
     </application>
 
 </manifest>

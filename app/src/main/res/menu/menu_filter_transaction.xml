@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_all"
+        android:title="Tất cả" />
+    <item
+        android:id="@+id/menu_this_month"
+        android:title="Tháng này" />
+    <item
+        android:id="@+id/menu_last_month"
+        android:title="Tháng trước" />
+    <item
+        android:id="@+id/menu_custom"
+        android:title="Tùy chọn thời gian" />
+</menu>
