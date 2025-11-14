@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SmartBudget">
         <activity
+            android:name=".activity.AccountActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.SubCategoryActivity"
             android:exported="false" />
         <activity
