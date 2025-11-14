@@ -30,6 +30,7 @@ public class TransactionActivity extends AppCompatActivity {
     private RadioButton rdIncome, rdExpense, rdAll;
     private TextView tvSpendingTransaction, tvIncomeTransaction;
 
+    private ImageButton imgbtnAccountTransaction;
 
     private final List<TransactionDisplay> transactionList = new ArrayList<>();
     private DBHelper dbHelper;
@@ -61,6 +62,12 @@ public class TransactionActivity extends AppCompatActivity {
             Intent intent = new Intent(TransactionActivity.this, AddTransactionActivity.class);
             startActivity(intent);
         });
+
+        imgbtnAccountTransaction.setOnClickListener(v -> {
+            Intent intent = new Intent(TransactionActivity.this, AccountActivity.class);
+            startActivity(intent);
+        });
+
     }
 
     private void initViews() {
@@ -74,6 +81,7 @@ public class TransactionActivity extends AppCompatActivity {
         tvSpendingTransaction = findViewById(R.id.tv_spending_transaction);
         tvIncomeTransaction = findViewById(R.id.tv_income_transaction);
         imgbtnAddTransaction = findViewById(R.id.imgbtnAddTransactionTransaction);
+        imgbtnAccountTransaction = findViewById(R.id.imgbtnAccountTransaction);
 
     }
 
